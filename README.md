@@ -25,7 +25,7 @@ Send a message to Service Bus:
 
 $ sender_app:send().
 
-#Receive Messages
+# Receive Messages
 
 $ ./rebar3 shell
 
