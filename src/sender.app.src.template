@@ -1,0 +1,22 @@
+{application, sender,
+ [{description, "An AMQP 1.0 Sender application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, { sender_app, []}},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[
+    {"Address", "NAMESPACE.servicebus.windows.net"},
+    {"Hostname", <<"NAMESPACE.servicebus.windows.net">>},
+    {"Port", 5671},
+    {"User", <<"KEYNAME">>},
+    {"Password", <<"PASSWORD">>},
+    {"Queue", <<"test">>}
+  ]},
+  {modules, []},
+  {maintainers, []},
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
