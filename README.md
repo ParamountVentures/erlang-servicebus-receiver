@@ -33,7 +33,7 @@ $ application:start(sender).
 
 $ receiver_sup:start_link().
 
-* Start 20 workers to receive messages *
+*Start 20 workers to receive messages*
 
 $ receiver_sup:start_receivers(20).
 
