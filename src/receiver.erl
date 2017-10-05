@@ -116,7 +116,7 @@ ok.
 listener(Worker) ->
   % wait for a delivery
   receive
-    {amqp10_msg, Receiver, InMsg} -> 
+    {amqp10_msg, _Receiver, InMsg} -> 
       io:format("Got Message in ~p ...", [Worker]),
       erlang:display(InMsg),
       ok
