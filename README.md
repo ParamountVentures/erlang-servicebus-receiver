@@ -15,7 +15,7 @@ $ cd erlang-servicebus-receiver
 
 Add the config details for Azure to src/sender.app.src (remove the .template extension) - placeholders are highlighted.
 
-#Send Messages
+# Send Messages
 
 $ ./rebar3 shell
 
@@ -33,7 +33,7 @@ $ application:start(sender).
 
 $ receiver_sup:start_link().
 
-*Start 20 workers to receive messages *
+* Start 20 workers to receive messages *
 
 $ receiver_sup:start_receivers(20).
 
